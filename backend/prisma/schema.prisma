@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  // Default output location within node_modules
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model UserStats {
+  id                    String    @id @default(cuid())
+  clerkUserId           String    @unique // Clerk User ID, ensures one entry per user
+  readingLevel          String    @default("intermediate")
+  streak                Int       @default(0)
+  lastActivity          DateTime? // Nullable DateTime
+  totalReadingTime      Int       @default(0) // in minutes
+  totalPassagesRead     Int       @default(0)
+  totalExercisesCompleted Int     @default(0)
+  correctAnswers        Int       @default(0)
+  totalQuestions        Int       @default(0)
+  progress              Int       @default(0) // 0-100%
+  startDate             DateTime  @default(now())
+  lastSessionDuration   Int       @default(0) // in minutes
+  dailyGoal             Int       @default(15) // minutes per day
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+// You can add other models here if needed, e.g., for storing exercise results individually
