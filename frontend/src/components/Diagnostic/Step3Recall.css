@@ -1,0 +1,228 @@
+.diagnostic-container {
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.logo .accent {
+  color: #3bb9b6;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.get-started-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid #3bb9b6;
+  background: transparent;
+  color: #3bb9b6;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background: #3bb9b6;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 800px;
+  margin-left: 8rem;
+  padding: 4rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.steps-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: #e0e0e0;
+  color: #666;
+}
+
+.step.active {
+  background: #3bb9b6;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.start-exercise-button, .dashboard-button {
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: #3bb9b6;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.start-exercise-button:hover, .dashboard-button:hover {
+  background: #2a9d9a;
+}
+
+.start-exercise-button .arrow, .dashboard-button .arrow {
+  margin-left: 0.5rem;
+}
+
+.decorative-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  z-index: 0;
+}
+
+.diagnostic-exercise-container {
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.exercise-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.step-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.step-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-left: 1rem;
+}
+
+.flashcards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.flashcard {
+  aspect-ratio: 1.5 / 1;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.flashcard:hover {
+  border-color: #bbb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.flashcard.selected {
+  background-color: #e6f8f7;
+  border: 2px solid #3bb9b6;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.listen-button {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid #3bb9b6;
+  background: transparent;
+  color: #3bb9b6;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.listen-icon {
+  margin-right: 0.5rem;
+}
+
+.next-button, .done-button {
+  padding: 0.6rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: #3bb9b6;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.next-button .arrow, .done-button .arrow {
+  margin-left: 0.5rem;
+}

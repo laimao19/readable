@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accent {
+  color: #3bb9b6;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-buttons button.get-started-button,
+.nav-buttons button.login-button,
+.nav-buttons button.dashboard-button,
+.nav-buttons button.results-button,
+.nav-buttons button.daily-button {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.nav-buttons button.get-started-button:hover,
+.nav-buttons button.login-button:hover,
+.nav-buttons button.dashboard-button:hover,
+.nav-buttons button.results-button:hover,
+.nav-buttons button.daily-button:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-buttons button.daily-button,
+.nav-buttons button.start-exercise-button {
+  background-color: #3bb9b6;
+  color: white;
+}
+
+.nav-buttons button.daily-button:hover,
+.nav-buttons button.start-exercise-button:hover {
+  background-color: #2a9d9a;
+}
+
+button.sign-out-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+}
+
+.nav-buttons button.sign-out-button:hover {
+  background-color: rgba(255, 77, 79, 0.05);
+  border-color: #d9363e;
+  color: #d9363e;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 0;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .nav-buttons {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .nav-buttons button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

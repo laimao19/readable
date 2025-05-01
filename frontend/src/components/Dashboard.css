@@ -1,0 +1,261 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.logo .accent {
+  color: #3bb9b6;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.start-button, .daily-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background: #3bb9b6;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.results-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+.welcome-actions-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.welcome-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.welcome-text p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.action-buttons-group {
+  display: flex;
+  gap: 10px;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.no-stats-message {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 16px;
+  color: #666;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.progress-section {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.progress-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.progress-chart {
+  display: flex;
+  height: 200px;
+  margin-top: 1rem;
+}
+
+.chart-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: right;
+  height: 100%;
+}
+
+.chart-content {
+  flex: 1;
+  position: relative;
+}
+
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #eee;
+  transform: translateY(-50%);
+}
+
+.time-labels {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .welcome-actions-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .action-buttons-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .action-buttons-group button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.header-sign-out {
+  padding: 6px 12px; 
+  font-size: 13px;
+} 
