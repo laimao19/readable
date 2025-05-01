@@ -1,5 +1,7 @@
 # ReadAble
 
+DEMO: https://youtu.be/yCGnHU4dD4M
+
 ReadAble is a web application designed to assist indivduals with dyslexia or reading difficulties to improve their reading comprehension and fluency. It provides personalized reading exercises with dynamic text simplification tailored to the user's assessed reading level.
 
 ## Project Structure
