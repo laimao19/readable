@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from simplifier_service.simplifier import DataDrivenTextSimplifier
+from simplifier_service.simplifier import NLPSimplifier
 import logging
 
 #logging
@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 #initializing simplifier
-simplifier = DataDrivenTextSimplifier()
+simplifier = NLPSimplifier()
 
 #POST simplifying text route
 @app.route('/api/simplify', methods=['POST'])

@@ -1,0 +1,84 @@
+*****************************
+
+P1
+Q: What is the ranking of Paris in the 18th Mercer Quality of Life study?
+a: 37th
+b: 10th
+c: 39th
+d: 2nd
+
+Q: What is one way in which big companies use the results of the Mercer Quality of Life study?
+a: To determine salary amounts
+b: To decide on the opening hours of offices and factories
+c: To improve the economy, health, education, housing, and the environment
+d: To improve their marketing campaigns
+
+Q: What factor can influence where big companies will open new offices and factories?
+a: The ranking a city receives in the Mercer Quality of Life study 
+b: How much staff are paid on average in a city
+c: How many German speakers work for the company
+d: The amount of taxes it would need to pay
+
+*****************************
+
+P2
+Q: Why is Vienna a cheap place to live compared to other cities?
+a: The government has helped make housing cheap
+b: A social tradition of sharing apartments among several people
+c: Apartments in other cities are closer to the city center
+d: Vienna is not a bustling economic center
+
+Q: How much rent does Helena Hartlauer pay for her apartment?
+a: £625
+b: £100
+c: £2,000
+d: She does not pay rent as she owns her apartment
+
+Q: What is one thing Hartlauer lists as a desirable aspect of her apartment?
+a: Its proximity to the center of the city
+b: It is a 20 minute walk from her workplace
+c: It is owned by Vienna’s government
+d: The lack of crime in its surroundings
+
+*****************************
+
+P3
+Q: What does Hartlauer think about safety in Vienna?
+a: She thinks people don’t recognize how safe it is
+b: She thinks people abroad believe it is safe
+c: She worries about personal safety and crime there
+d: She thinks the government should implement better safety policies
+
+Q: What is one reason why the Viennese public transport system is good, according to Hartlauer?
+a: The subway is cheap to ride
+b: The trains run 24 hours a day, every day
+c: It is very safe
+d: The stations are clean and orderly
+
+Q: What did going abroad make Hartlauer realize?
+a: That Vienna is safer than other places
+b: That Vienna is the safest city in the world
+c: That US cities are not very safe
+d: That nothing is more important than safety
+
+*****************************
+
+P4
+Q: What does Eichtinger say about business in Vienna?
+a: Vienna is an important location for business in Central Europe
+b: Vienna has the largest concentration of businesses in Central Europe
+c: Vienna’s businesses are fueled by the student population
+d: Vienna has some of the fastest-growing businesses in the world
+
+Q: How do the Viennese say their city compares to Zurich?
+a: They say Zurich is less fun than their city
+b: They say Zurich is second after Vienna in quality of life
+c: They say Zurich has fewer companies
+d: They say Zurich is less multicultural
+
+Q: Where is the embassy at which Martin Eichtinger works located?
+a: London
+b: Vienna
+c: Zurich
+d: New York
+

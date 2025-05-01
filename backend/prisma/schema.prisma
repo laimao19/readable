@@ -23,14 +23,69 @@ model UserStats {
   totalReadingTime      Int       @default(0) // in minutes
   totalPassagesRead     Int       @default(0)
   totalExercisesCompleted Int     @default(0)
-  correctAnswers        Int       @default(0)
-  totalQuestions        Int       @default(0)
+  totalCorrectComprehensionAnswers Int @default(0) // Total correct answers across all comprehension exercises
+  totalComprehensionQuestions Int @default(0) // Total questions across all comprehension exercises
+  averageComprehensionScore Float     @default(0) // Overall average comprehension score (percentage)
   progress              Int       @default(0) // 0-100%
   startDate             DateTime  @default(now())
   lastSessionDuration   Int       @default(0) // in minutes
+  lastDifficultWordPercentage Float @default(0) // percentage of difficult words in last exercise
   dailyGoal             Int       @default(15) // minutes per day
+  averageWPM            Int       @default(0) // Average words per minute
   createdAt             DateTime  @default(now())
   updatedAt             DateTime  @updatedAt
+  
+  // Relationships
+  exercises             Exercise[]
+  diagnosticResults     DiagnosticResult[]
+  readingSessions       ReadingSession[]
 }
 
-// You can add other models here if needed, e.g., for storing exercise results individually
+model Exercise {
+  id                    String    @id @default(cuid())
+  clerkUserId           String    // Foreign key to link to user
+  type                  String    // Type of exercise (e.g., "Daily Exercise")
+  minutesRead           Int       // Time spent reading
+  passagesRead          Int       // Number of passages read
+  difficultWords        String    // Comma-separated list of difficult words
+  difficultWordPercentage Float   // Percentage of difficult words
+  totalWords            Int       // Total words in the exercise
+  comprehensionScore    Float     @default(0) // Comprehension score from exercise (percentage)
+  readingTimeSeconds    Float?    // Reading time in seconds (more precise than minutesRead)
+  wordsPerMinute        Int?      // Words per minute reading speed
+  completedAt           DateTime  @default(now())
+  createdAt             DateTime  @default(now())
+  
+  // Relationship to UserStats
+  userStats             UserStats @relation(fields: [clerkUserId], references: [clerkUserId])
+}
+
+model DiagnosticResult {
+  id                    String    @id @default(cuid())
+  clerkUserId           String    // Foreign key to link to user
+  readingLevel          String    // Reading level determined by diagnostic
+  accuracyScore         Float     // Accuracy score (percentage)
+  comprehensionScore    Float     // Comprehension score (percentage)
+  speedScore            Float     // Reading speed score (percentage)
+  completedAt           DateTime  @default(now())
+  
+  // Relationship to UserStats
+  userStats             UserStats @relation(fields: [clerkUserId], references: [clerkUserId])
+}
+
+model ReadingSession {
+  id                   String    @id @default(cuid())
+  clerkUserId          String    // Foreign key to link to user
+  exerciseType         String    // Type of reading session (e.g., "diagnostic", "daily")
+  startTime            DateTime
+  endTime              DateTime?
+  wordCount            Int       @default(0)
+  readingTimeSeconds   Float?
+  wordsPerMinute       Int?
+  inProgress           Boolean   @default(true)
+  createdAt            DateTime  @default(now())
+  
+  // Relationship to UserStats
+  userStats            UserStats @relation(fields: [clerkUserId], references: [clerkUserId])
+}
+

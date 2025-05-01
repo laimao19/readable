@@ -1,0 +1,146 @@
+*****************************
+
+P1
+Q: What kind of reaction did Google’s new driverless car draw from the automobile industry?
+a: It drew strong attention from the industry
+b: The industry wasn’t impressed and did not find it interesting at first, but was shocked later
+c: It drew mostly excitement, but also disappointment at its lack of controls
+d: It drew considerable skepticism from safety experts
+
+Q: How does the car passenger’s phone interact with the car?
+a: It tells the car where the user wants to go
+b: It has an app with normal car controls in case of an emergency
+c: It keeps track of the car’s speed so that it does not exceed 25 miles per hour
+d: It processes the sensory information from the car and guides the car
+
+Q: What is unique about the controls of the car that Google just released?
+a: It has fewer controls compared to a typical car
+b: It has special foot pedals
+c: It can quickly accelerate to a speed of 25 miles per hour
+d: It has more reliable controls as compared to conventional cars
+
+*****************************
+
+P2
+Q: What does Brin say his company’s motivation is for making this car?
+a: Helping people who do not have good transportation today
+b: Changing the world for people who already drive regularly
+c: Becoming the leading company in prototyping autonomous vehicles
+d: Improving traffic
+
+Q: According to the company’s co-founder, the experience of riding in the car was ...
+a: pleasant
+b: forgettable
+c: life-changing
+d: thrilling
+
+Q: Who does Brin say the car will benefit?
+a: People who find it difficult to travel around
+b: People who want to change the world
+c: People who find driving very relaxing
+d: People who can’t afford current cars
+
+*****************************
+
+P3
+Q: According to the article, what has Google done to improve safety?
+a: Used materials that are safer for pedestrians
+b: Designed the car to automatically detect pedestrians
+c: Gone through multiple rounds of testing
+d: Installed more cameras and sensors throughout the car
+
+Q: What will Google do now?
+a: Test-pilot the cars
+b: Begin selling the cars to a limited audience
+c: Further improve safety by adding more foam
+d: Add more comfort features to the cars
+
+Q: Could Google’s cars be purchased at the time that the article was written?
+a: No, they needed to go through more tests
+b: Yes, but only by signing up for a special testing program
+c: Yes, but only in Detroit
+d: No, but it is possible to purchase the previous version of these cars
+
+*****************************
+
+P4
+Q: Why are detailed, high-quality scans of the road needed?
+a: Because the cars cannot collect and process enough information in real time
+b: Because people cannot collect and process enough information in real time
+c: Because California has thousands of miles of roads
+d: Because the cars often don’t arrive at their destination
+
+Q: When will Google allow other car companies to use their technology?
+a: When the technology has become better
+b: When traditional car companies improve their technology
+c: When the cars can drive on highways
+d: When people trust driverless cars more
+
+Q: Why can’t the driverless cars currently drive on all roads?
+a: Not all roads have been thoroughly scanned yet
+b: Even the best currently-possible road scans are not of high enough quality to make these cars safe
+c: Driverless cars are restricted by law to about 2,000 of California’s 170,000 miles of road
+d: Pushback from traditional car companies
+
+*****************************
+
+P5
+Q: Why is Conyon worried about driverless cars?
+a: Drivers may lose their jobs
+b: He is alarmed by their safety record compared to taxis driven by humans
+c: Driverless cars will overcrowd the UK roads, which already have 100,000 taxis
+d: Driverless cars might be too expensive
+
+Q: Approximately how many taxi drivers are there in the UK?
+a: 100,000
+b: 22,000
+c: Unknown, as many drivers are not part of the UK National Taxi Association
+d: Almost none, as most are now working for Uber and Lyft
+
+Q: The number of taxi drivers in London is ...
+a: about 22,000
+b: about 100,000
+c: decreasing, as the number of unemployed taxi drivers has been rising
+d: unknown, as it has not been surveyed recently
+
+*****************************
+
+P6
+Q: How will Volvo’s cars contrast with Google’s cars?
+a: Volvos will keep their driver controls
+b: Volvos will drive with more control
+c: Volvos will have an emergency stop button
+d: Volvos will be capable of driving at higher speeds
+
+Q: Why did Google remove the steering wheel from their driverless car prototypes?
+a: People may not be able to assume control during an emergency
+b: In a crisis, drivers can just use the brakes
+c: They wanted to be different from other companies
+d: To make driving more pleasant
+
+Q: Who is planning on implementing driver controls in self-driving cars?
+a: Volvo, Ford and Mercedes
+b: Google
+c: Chris Urmson
+d: Honda, Toyota and Renault
+
+*****************************
+
+P7
+Q: Getting where you want to go with Google’s new car will ...
+a: be very easy
+b: require pressing a button that says “push”
+c: be possible for 700,000 miles
+d: require using voice commands
+
+Q: How do Google driverless cars perform?
+a: They travel hundreds of thousands of miles without accidents
+b: They can travel up to 700,000 miles before needing maintenance
+c: They are 80% better than human-driven cars
+d: They are worse than human-driven cars
+
+Q: What kind of accidents does Google pride itself in having managed to avoid during the testing phase of the car?
+a: Accidents that are caused by the car’s computer
+b: Accidents that damage the car’s computer
+c: Accidents resulting from pushing buttons
+d: Accidents that are caused by mechanical failure
