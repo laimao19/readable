@@ -38,7 +38,7 @@ The application is divided into three main components:
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/laimao19/readable.git
     cd readable
     ```
 2.  **Install dependencies for all services:**
