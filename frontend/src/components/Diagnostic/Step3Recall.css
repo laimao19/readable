@@ -163,6 +163,15 @@ h1 {
   margin: 0 auto 2rem;
 }
 
+.test-words-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
 .flashcard {
   aspect-ratio: 1.5 / 1;
   height: 120px;

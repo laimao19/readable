@@ -249,10 +249,10 @@ function Step2Comprehension() {
              {isSpeaking ? 'Stop' : 'Listen'}
           </button>
           <button className="previous-button" onClick={handlePreviousQuestion} disabled={currentQuestion === 1}>
-            Previous
+            <span className="arrow">←</span> Previous
           </button>
           <button className="next-button" onClick={handleNextQuestion}>
-            {currentQuestion === 3 ? 'Finish' : 'Next'}
+            {currentQuestion === 3 ? 'Finish' : 'Next'} <span className="arrow">→</span>
           </button>
         </div>
       </div>

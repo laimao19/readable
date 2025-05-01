@@ -1,0 +1,126 @@
+*****************************
+
+P1
+Q: What difference did oxytocin make to the brains of autistic children, as shown in brain scans?
+a: Improved responses to faces
+b: Improved flow of chemicals in the brain
+c: Increased responses to conversation
+d: Increased activity when solving math problems
+
+Q: How can oxytocin be used for people with autism, according to the researchers?
+a: It can enhance the effectiveness of current treatments
+b: It can effectively replace current treatments
+c: It can help children like Kevin Pelphrey go to school more regularly
+d: It can reduce their anxiety levels
+
+Q: Do the researchers expect oxytocin to interact well with other treatments?
+a: Yes, it can be combined with existing treatments
+b: No, oxytocin will not be effective if other treatments are used
+c: Yes, if the patient already has normal social responses
+d: The researchers think it is too early to know
+
+*****************************
+
+P2
+Q: How were the social aspects of autism effectively treated before the time this article was written?
+a: There was no effective treatment available
+b: So far, by focusing on causes of autism
+c: With chemicals
+d: With surgery
+
+Q: What are the results of Oxytocin experiments so far?
+a: Some experiments found oxytocin had an effect on autism and some did not
+b: Experiments worked well on all participants but one
+c: They showed good results on more than 100 people
+d: No experiments have been conducted so far
+
+Q: What is the effectiveness of non-oxytocin treatments for social problems caused by autism?
+a: They have no significant effect
+b: They are highly effective but not perfect
+c: The studies conducted by researchers at Yale are focusing on this question
+d: They work for adults but not for children
+
+*****************************
+
+P3
+Q: What were the two different groups in the experiment?
+a: One group was given oxytocin; the other was given placebo
+b: One received oxytocin through injections; the other through a nose spray
+c: One group looked at images of cars; the other looked at images of facial expressions
+d: One group was given behavioral therapy; the other was given cognitive therapy
+
+Q: What is the normal response of reward circuits in children’s brains?
+a: Increased activity when looking at faces; decreased activity when looking at cars
+b: Increased activity when looking at cars; decreased activity when looking at faces
+c: It depends if their age is eight or 16
+d: The same activity when looking at faces and cars
+
+Q: Why did the scientists have autistic children look at both people and cars?
+a: To see if oxytocin changed how their brains responded to them
+b: To analyze which regions of their brains respond more to people versus cars 
+c: To evoke different emotions in the children
+d: These are the most common pictures shown to people used in brain research
+
+*****************************
+
+P4
+Q: Who or what claims that oxytocin could be helpful for social motivation in autism?
+a: Perphrey’s study
+b: Most of the past studies on treating autism
+c: People who tried it at home
+d: Popular science magazines
+
+Q: What is one reason Pelphrey warns against buying oxytocin online?
+a: More research still needs to be done
+b: People might buy the wrong product
+c: He is afraid it will be used for conditions other than autism for which we don’t yet have a treatment
+d: Oxytocin requires a doctor’s prescription
+
+Q: What does Pelphrey think about buying oxytocin online?
+a: He is opposed to it since more research is still needed
+b: He thinks it’s difficult to buy it online
+c: He thinks it’s too early to know if it will be sold online
+d: He is for it, as long as the retailer is trustworthy
+
+*****************************
+
+P5
+Q: What is one of the reasons scientists are uncertain about using oxytocin in real life?
+a: It may have harmful side effects
+b: It might benefit people with autism but harm others
+c: Experts such as Baron-Cohen claim there is no evidence that oxytocin is effective
+d: They are afraid that insurance companies will not pay for it
+
+Q: The duration of oxytocin effects indicates that ...
+a: it will be challenging to use it as a treatment
+b: it has the potential of being an effective treatment
+c: it might have bad side effects
+d: it might be no more effective than placebo
+
+Q: What is currently known about the benefits and side effects of oxytocin?
+a: There is evidence that it has potential benefits, but little is known about its side effects
+b: Oxytocin has negative side effects while little is known about its potential benefits
+c: Oxytocin has about 45 known side effects, most of which are minor
+d: Not much; both have been debated for decades
+
+*****************************
+
+P6
+Q: What does Frith say is a result of the oxytocin study?
+a: Oxytocin can increase interest in faces
+b: Oxytocin leads to more accurate recognition of faces
+c: Oxytocin affects behavior in response to faces
+d: Oxytocin can make people forget faces
+
+Q: According to Frith, what would be the crucial piece of evidence needed for showing oxytocin is a valuable treatment for autism?
+a: The existence of behavioral effects
+b: Even stronger behavioral effects
+c: Increased brain response to faces
+d: Repeating the experiment to see if the same behavioral effects are obtained
+
+Q: Why does Firth advocate for demonstrating behavioral effects of oxytocin?
+a: To show that oxytocin can be an effective treatment for autism
+b: To show that oxytocin can become popular
+c: To show that oxytocin might change brain activity
+d: To show that oxytocin is safe and easy to use
+

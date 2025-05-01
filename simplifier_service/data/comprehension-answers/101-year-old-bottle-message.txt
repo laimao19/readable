@@ -1,0 +1,125 @@
+*****************************
+
+P1
+Q: Who threw the bottle into the Baltic Sea?
+a: Angela Erdmann’s grandfather
+b: Angela Erdmann
+c: A museum worker
+d: A fisherman
+
+Q: Where is the bottle now?
+a: On exhibit in Germany
+b: In Angela Erdmann’s possession
+c: In the Baltic Sea
+d: In a private collection of maritime items
+
+Q: How did Angela Erdmann find out about the bottle?
+a: A museum told her that they had it
+b: She coincidentally saw it at the museum where it was held
+c: She found it in her basement on April 28th, 2014
+d: A friend told her about it
+
+*****************************
+
+P2
+Q: What did Angela’s visitor deliver?
+a: News of the discovery of the bottle
+b: A message from the post office
+c: A letter from a museum in Hamburg
+d: A package for Angela
+
+Q: Who was Angela’s visitor?
+a: An ancestry researcher
+b: A museum representative from Hamburg
+c: A postman
+d: A journalist
+
+Q: How did the visitor know the message in the bottle was written by Angela’s grandfather?
+a: Her grandfather’s name appeared on the message
+b: Her grandfather’s name was carved on the bottle
+c: The person who gave it to the museum said so
+d: The letter had unique details about her grandfather’s life
+
+*****************************
+
+P3
+Q: How was the bottle discovered?
+a: A fisherman discovered it
+b: It washed up on the shore of Kiel
+c: Holger von Neuhoff discovered it
+d: A boy discovered it while playing in the sea
+
+Q: What does Holger von Neuhoff say about the bottled message?
+a: It is the oldest message found along with the bottle he has ever encountered
+b: It is the oldest message in the museum
+c: It is a beer bottle that was in the water for 101 years
+d: It is the most recent addition to the museum’s collection
+
+Q: Does the museum have older messages than the one recently discovered?
+a: Yes, but without the bottle
+b: No, it is the oldest message
+c: Yes, but not from the Baltic Sea
+d: No, it displays mostly personal relics
+
+*****************************
+
+P4
+Q: According to researchers, when did Richard Platz throw the bottle into the sea?
+a: At the age of 20
+b: Before 1913
+c: At the age of 54
+d: Before 1901
+
+Q: What did Richard Platz request from the person who finds the bottle?
+a: To use the stamps in the bottle to send the letter to Platz
+b: To buy two stamps and sent the letter to Platz
+c: To give the bottle to Angela after his death
+d: To rescue him from the island he was stranded on
+
+Q: Where did Richard Platz want the postcard to end up?
+a: His home
+b: In the hands of whomever found it
+c: Floating in the sea
+d: At a museum
+
+*****************************
+
+P5
+Q: Which of the following characteristics does Angela Erdman share with her grandfather?
+a: Open-mindedness
+b: Love for writing
+c: Opposition to polluting the sea
+d: Love for museums
+
+Q: Does Angela approve of sending bottled messages into the sea nowadays?
+a: No, she thinks there is already enough objects in the sea that do not belong there
+b: Yes, as long as they are not thrown along with rubbish
+c: Yes, to her it is part of the culture of travelling around the world
+d: No, she thinks broken bottles in the sea can be dangerous
+
+Q: What does Angella think of the state of the sea today?
+a: It is full of objects that do not belong there
+b: Too many people have thrown bottled messages into it
+c: More than ever, it symbolizes freedom
+d: She finds the rise in sea levels concerning
+
+*****************************
+
+P6
+Q: What will happen to the bottle after the experts finish examining the text?
+a: Its fate is not known
+b: It will stay at the Maritime Museum
+c: Photos of it will be put on display
+d: It will be given to Erdmann
+
+Q: What does Erdmann want to add to the bottle exhibit?
+a: Pictures of the bottled message’s author
+b: A photo that depicts a young man throwing a bottle into the sea
+c: A deciphered copy of the text
+d: Excerpts from a book written by her grandfather
+
+Q: What does Erdmann want to happen to the bottle after the exhibit?
+a: She wants it to remain at the Hamburg Maritime Museum
+b: She does not make it clear what she wants to happen to the bottle
+c: She wants museum visitors to be able to take photos with it
+d: She wants to move it to her apartment and keep it for herself

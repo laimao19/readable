@@ -1,0 +1,146 @@
+*****************************
+
+P1
+Q: Who is Larry Pizzi?
+a: The CEO of the largest company that sells e-bikes in the US
+b: The CEO of the first company to sell e-bikes in the US
+c: A CEO who used e-bikes almost 20 years ago
+d: A CEO who bikes to work every day
+
+Q: What do the bicycle brands Trek, Raleigh, and Specialized think will happen?
+a: That e-bike sales are going to expand
+b: That they will soon offer electric bikes
+c: That Currie Technologies will be the number one seller of e-bikes in the US
+d: That electric bikes will become lighter in the future
+
+Q: What is Currie Technologies?
+a: A company that is headed by Larry Pizzi
+b: A company that will soon sell e-bikes
+c: A company founded nearly 20 years ago
+d: A company known for selling non-electric bikes
+
+*****************************
+
+P2
+Q: What was true about the e-bike market in 2014?
+a: Most e-bike sales in the world were in China
+b: E-bike sales in China reached 32 million
+c: E-bike regulations emerged in many parts of Europe
+d: E-bike sales in Europe doubled from their level in 2013
+
+Q: Who uses e-bikes for work?
+a: People who work for the German post office
+b: People who work for BMW
+c: 32 million people around the world
+d: People who deliver food
+
+Q: What is true of the e-bike market in China?
+a: It was the largest e-bike market in the world as of 2014
+b: Over 32 million e-bikes were sold there in 2014
+c: It is dominated by BMW
+d: It does not exist yet
+
+*****************************
+
+P3
+Q: What is one difference between e-bikes and mopeds with regard to their motors?
+a: E-bikes can be ridden without using their motor
+b: E-bike motors are less resilient to wind
+c: E-bike motors are better suited for going fast uphill
+d: E-bike motors are quieter
+
+Q: What is one limitation of e-bikes?
+a: Their speed usually does not go above 20 mph
+b: They aren’t usually allowed to be ridden in bike lanes
+c: Their battery runs out quickly when ridden against the wind
+d: They are usually heavier than normal bikes
+
+Q: When can you ride e-bikes on bike lanes?
+a: In most cases
+b: Whenever you ride slower than 20mph
+c: Whenever you ride without the help of the motor
+d: Never
+
+*****************************
+
+P4
+Q: Why don’t some bike sellers want to put motors on bikes?
+a: Because they prefer the bikes to be lighter
+b: Because the bikes they sell already have a weight of almost 30kg
+c: Because motor sales are banned in some states
+d: Because they think e-bikes are unsafe
+
+Q: What is true of e-bike prices?
+a: They vary from several hundred to a few thousand dollars
+b: They cost at least $1,500
+c: They are exempt from taxes in states like New York
+d: They are getting cheaper
+
+Q: What can you get for $1,500?
+a: A quality e-bike
+b: A low-tier e-bike
+c: A bike that weighs at least 30kg
+d: A bike that weighs at least 50kg
+
+*****************************
+
+P5
+Q: What does DiCostanza say about e-bike batteries?
+a: They used to last for a shorter time
+b: They used to be smaller
+c: Their sales increased between 2000 and 2012
+d: They will soon be rechargeable at gas stations
+
+Q: Why has bicycle commuting become more popular?
+a: There are more bike lanes available for people to bike in
+b: More bikes are being built and distributed in cities
+c: It is more practical than commuting by car
+d: There is a recent trend of people wanting to be more active
+
+Q: Who or what is DiCostanza?
+a: The head of a company
+b: A company that makes and sells electric bikes
+c: A worker of the US Census Bureau
+d: An opponent of e-bike technology
+
+*****************************
+
+P6
+Q: Who are the customers of Pedego, according to Don DiCostanza?
+a: Adults
+b: Kids
+c: Californians
+d: High-tech employees
+
+Q: According to Craig Anderson, what is one goal of ElectroBike?
+a: To contribute to people’s health
+b: To reduce ElectroBike’s carbon footprint
+c: To become bigger than Trek, Currie and Accell
+d: To to improve e-bike technology
+
+Q: What does ElectroBike hope to accomplish within a year of opening its store in Venice Beach?
+a: Have 25 stores in the US 
+b: Have 30 stores in Mexico
+c: Sell more bikes than Accell
+d: Sell more bikes than General Electric
+
+*****************************
+
+P7
+Q: According to Pizzi, which population is now using e-bikes?
+a: Young people
+b: People who can not afford cars
+c: Small children
+d: Wealthy people
+
+Q: What is true of the cargo bike?
+a: It can transport 45kg
+b: It can be ridden by children
+c: It is especially popular with baby boomers
+d: It is more expensive than regular e-bikes
+
+Q: According to Pizzi, what is one benefit of the “cargo bike”?
+a: It can be used to transport children
+b: It has a stronger motor than a minivan
+c: It is manufactured in North America
+d: It is very stable compared to other bikes

@@ -1,0 +1,126 @@
+*****************************
+
+P1
+Q: Where is the ice cream shop located?
+a: Butare
+b: Burundi
+c: Near a popular tea and coffee shop
+d: The capital Kigali
+
+Q: What can customers buy at the ice cream shop, other than ice cream?
+a: Beverages
+b: Passion fruit
+c: Traditional Butare sweets
+d: Frozen yogurt
+
+Q: Where is one place where people come to the ice cream shop from?
+a: Burundi
+b: Inzozi Nziza
+c: South Africa
+d: Uganda
+
+*****************************
+
+P2
+Q: Why does Louise Ingabire say there is still work to be done?
+a: Ice cream is currently not very common in Rwanda
+b: Many Rwandans say they will not enjoy it
+c: Local people are incurious about ice cream
+d: The ice cream flavor can still be improved
+
+Q: What does Ingabire plan to do with some of the money she is making?
+a: Provide financial support to her relatives
+b: Start a family
+c: Change many people’s lives
+d: Improve her shop
+
+Q: Why did Ingabire previously stay at home?
+a: She was not employed
+b: She was able to make money from home
+c: She was trying to make her family’s dreams come true
+d: She was taking care of her parents
+
+*****************************
+
+P3
+Q: Where is the National University of Rwanda located?
+a: Butare
+b: Kigali
+c: Nyanza
+d: Nairobi
+
+Q: Where do the ice cream shop’s ingredients come from?
+a: Some are local and some are not local
+b: Most are from nearby Nyanza
+c: Some are local and some from the capital, Kigali
+d: Most are from a nearby grocery store
+
+Q: What is true of Kigali?
+a: It is 135km away from Butare
+b: It is the home of the National University of Rwanda
+c: It is where Inzozi Nziza gets most of its ingredients from 
+d: It is the most famous city in Rwanda
+
+*****************************
+
+P4
+Q: What happened in 2010?
+a: A partnership was formed to open an ice cream shop
+b: Alexis Miesen and Jennie Dundas co-founded Blue Marble Ice Cream
+c: Women workers received shares of Inzozi Nziza
+d: Inzozi Nziza became the most popular dessert shop in Rwanda
+
+Q: Who had all the shares of the business 18 months after the opening?
+a: The workers
+b: Miesen and Dundas
+c: Odile Gakire Katese
+d: A local family
+
+Q: Who founded Blue Marble Ice Cream?
+a: Alexis Miesen and Jennie Dundas
+b: Odile Gakire Katese
+c: A partnership of ice cream store workers
+d: A group of social activists
+
+*****************************
+
+P5
+Q: What is common to all the members of Ingoma Nshya?
+a: They are all Hutu and Tutsi women
+b: They are all employees of the Butare ice cream shop
+c: They are all survivors of the 1994 genocide
+d: They all like ice cream
+
+Q: What does drumming do for Ingabire?
+a: It empowers her as a survivor
+b: It is something she can enjoy with her family
+c: It makes her feel part of the Rwandan culture
+d: It provides a source of stress relief
+
+Q: What is Ingoma Nshya?
+a: A group of drummers in Rwanda whose members are all women
+b: A group of Hutu and Tutsi drummers that are ice cream shop employees
+c: A support group for Tutsi and Hutu survivors of the 1994 genocide
+d: A drumming festival in Rwanda
+
+*****************************
+
+P6
+Q: What is the name of Rob and Lisa Fruchtman’s film?
+a: Sweet Dreams
+b: The Ice-cream Shop
+c: Hope and Bravery
+d: Against the Odds
+
+Q: What is one of the things Lisa Fruchtman feels the film is about?
+a: Courage
+b: How to change your friends’ lives
+c: The importance of female drummers
+d: Love
+
+Q: Who appears in the film Sweet Dreams?
+a: Women who drum
+b: Women whose relatives did not survive the genocide
+c: Women from several African states who are ice cream shop employees
+d: Women who are trying ice cream for the first time
+

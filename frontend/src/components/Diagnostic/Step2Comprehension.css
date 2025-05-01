@@ -186,7 +186,20 @@ h1 {
   cursor: pointer;
 }
 
-.listen-button:disabled {
+.listen-question-button {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid #3bb9b6;
+  background: transparent;
+  color: #3bb9b6;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.listen-button:disabled,
+.listen-question-button:disabled {
   border-color: #ccc;
   color: #ccc;
   cursor: not-allowed;
@@ -206,6 +219,27 @@ h1 {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.previous-button {
+  padding: 0.6rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: #3bb9b6;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.previous-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.next-button .arrow, .previous-button .arrow {
+  margin-left: 0.5rem;
 }
 
 .questions-container {
@@ -246,4 +280,11 @@ h1 {
 .option.selected {
   background: #e6f8f7;
   border: 1px solid #3bb9b6;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
 }

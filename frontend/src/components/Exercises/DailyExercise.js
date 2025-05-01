@@ -644,12 +644,6 @@ function DailyExercise() {
           <div className="passage-text">{passageToShow}</div>
         </div>
 
-        {sourceInfo.source && (
-          <div className="source-info">
-            <p>Source: {sourceInfo.source}</p>
-          </div>
-        )}
-
         <div className="actions">
           <button 
             className={`listen-button ${isSpeaking ? 'speaking' : ''}`} 

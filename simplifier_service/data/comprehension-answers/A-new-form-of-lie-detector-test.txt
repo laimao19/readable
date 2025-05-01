@@ -1,0 +1,105 @@
+*****************************
+
+P1
+Q: When is the new lie detection method expected to work with over 70% accuracy?
+a: It has already achieved this accuracy level in tests
+b: Within ten years
+c: Once it is modified to monitor movements of the entire body
+d: It is currently not known
+
+Q: What does the new method of lie detection monitor that the polygraph does not?
+a: Motions in the entire body
+b: Talking too much and arm waving
+c: Body responses to statements about events within a period of ten years
+d: Body temperature
+
+Q: When are police stations expected to start using the new lie detection method?
+a: Within 10 years
+b: Once it reaches an accuracy of at least 70%
+c: Once it is able to track the movements of the entire body
+d: It is already in use in many police stations
+
+*****************************
+
+P2
+Q: What can an all-body suit be used for?
+a: Create computer-generated characters
+b: Influence liars to fidget more
+c: Protect FBI and CIA agents
+d: Protect the body in cold weather
+
+Q: What does Anderson say can be measured now?
+a: Body motions that show whether someone is guilty
+b: Whether fidgeting causes people to feel guilty
+c: The reliability of the polygraph in determining if someone is guilty
+d: Small changes in breathing rate that show if someone is guilty
+
+Q: What position does Ross Anderson hold?
+a: A researcher on the team developing the new method for lie-detection
+b: A test participant whose lies the new method could correctly detect 80% of the time
+c: A special effects editor who creates computer generated characters for tests
+d: A director of an organization looking to refine interrogation methods
+
+*****************************
+
+P3
+Q: Who was John Larson?
+a: A policeman who developed a lie-detection method
+b: A psychologist who created the polygraph
+c: A US Supreme Court judge who ruled on the reliability of the polygraph
+d: A 21st century researcher working on new methods of lie detection
+
+Q: What happened in 1998?
+a: The Supreme Court could not confirm that polygraphs are reliable
+b: The Supreme Court decided to prohibit the use of polygraphs
+c: The US National Academy of Scientists said it cannot confirm that polygraphs are reliable
+d: The European Union decided that polygraphs are not reliable
+
+Q: Who first stated that the polygraph might not be reliable?
+a: The Supreme Court of the United States
+b: The National Academy of Scientists
+c: The psychologist William Martson
+d: The Federal Bureau of Intelligence
+
+*****************************
+
+P4
+Q: What did participants lie about in the Never End game experiment?
+a: Whether they played the game
+b: The duration of the game
+c: Being paid £5 to play the game
+d: Their position on the game’s leaderboard
+
+Q: What were some people supposed to do with the wallet?
+a: Return it to a box of lost-and-found items
+b: Take out £5 and leave it where they found it
+c: Discuss what they would do with it in an interview
+d: Seek out the original owner and return it
+
+Q: What did some participants do for seven minutes?
+a: Played a computer game
+b: Were interviewed about Never End
+c: Looked for a place to hide a wallet
+d: Talked to a policeman
+
+*****************************
+
+P5
+Q: What is one reason Anderson is looking for alternatives to body suits?
+a: Body suits are costly
+b: Body suits will become expensive in the future
+c: The new suit is only 82.2% reliable
+d: Body suits take a long time to manufacture
+
+Q: What is one possible alternative to the body suit?
+a: Technology that senses movement remotely
+b: Microsoft Xbox gaming consoles
+c: Arm monitors
+d: A brain scanner
+
+Q: Which of the following is true about body suits?
+a: They cost a lot of money
+b: They are comfortable
+c: They were inspired by game consoles
+d: They are very durable
+
