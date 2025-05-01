@@ -658,4 +658,26 @@ h1 {
   .comprehension-score-summary .score {
     font-size: 1.5rem;
   }
+}
+
+.beginner-text {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.intermediate-text {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.advanced-text {
+}
+
+.passage-text, 
+.text-container, 
+.question h3, 
+.option {
+  transition: font-size 0.3s, font-family 0.3s;
 } 

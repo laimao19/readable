@@ -82,6 +82,29 @@ def simplify_route():
         simplifier_instance.total_words_checked = 0
         #simplifying the text
         simplified_text = simplifier_instance.simplify_text(original_text)
+        evaluation = simplifier_instance.evaluate_simplification(original_text, simplified_text)
+        
+        # Log evaluation metrics
+        logging.info("\n==== Simplification Evaluation ====")
+        logging.info("Original text metrics:")
+        logging.info(f"Flesch reading ease score: {evaluation['original_metrics']['flesch_reading_ease']:.2f} ({evaluation['original_metrics']['interpretation']})")
+        logging.info(f"Difficult word %: {evaluation['original_metrics']['difficult_word_percent']:.2f}%")
+        logging.info(f"Avg word length: {evaluation['original_metrics']['avg_word_length']:.2f}")
+        logging.info(f"Avg sentence length: {evaluation['original_metrics']['avg_sentence_length']:.2f}")
+
+        logging.info("\nSimplified text metrics:")
+        logging.info(f"Flesch reading ease score: {evaluation['simplified_metrics']['flesch_reading_ease']:.2f} ({evaluation['simplified_metrics']['interpretation']})")
+        logging.info(f"Difficult word %: {evaluation['simplified_metrics']['difficult_word_percent']:.2f}%")
+        logging.info(f"Avg word length: {evaluation['simplified_metrics']['avg_word_length']:.2f}")
+        logging.info(f"Avg sentence length: {evaluation['simplified_metrics']['avg_sentence_length']:.2f}")
+
+        logging.info("\nImprovement:")
+        logging.info(f"Flesch reading ease score: +{evaluation['flesch_reading_ease_diff']:.2f} points")
+        logging.info(f"Difficult word reduction: {evaluation['difficult_word_percent_diff']:.2f}%")
+        logging.info(f"Avg word length reduction: {evaluation['avg_word_length_diff']:.2f}")
+        logging.info(f"Avg sentence length reduction: {evaluation['avg_sentence_length_diff']:.2f}")
+        logging.info(f"Text length reduction: {evaluation['sentence_len_reduction_pct']:.2f}%")
+        
         #calculating simplification stats
         replacement_count = getattr(simplifier_instance, 'replacement_count', 0)
         total_words = len(original_tokens)
@@ -93,13 +116,26 @@ def simplify_route():
         else:
             simplification_percent = 0
             logging.info("No words to simplify")
+            
+        # Include evaluation metrics in the response
         return jsonify({
             "original_text": original_text, 
             "simplified_text": simplified_text, 
             "tier": current_tier,
             "simplification_percent": round(simplification_percent, 1),
             "words_replaced": replacement_count,
-            "total_words": total_words
+            "total_words": total_words,
+            "evaluation_metrics": {
+                "original_metrics": evaluation["original_metrics"],
+                "simplified_metrics": evaluation["simplified_metrics"],
+                "improvement": {
+                    "flesch_reading_ease_diff": evaluation["flesch_reading_ease_diff"],
+                    "difficult_word_percent_diff": evaluation["difficult_word_percent_diff"],
+                    "avg_word_length_diff": evaluation["avg_word_length_diff"],
+                    "avg_sentence_length_diff": evaluation["avg_sentence_length_diff"],
+                    "sentence_len_reduction_pct": evaluation["sentence_len_reduction_pct"]
+                }
+            }
         }), 200
     except Exception as e:
         logging.error(f"Failed to simplify text: {e}", exc_info=True)

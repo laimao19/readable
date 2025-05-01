@@ -490,7 +490,7 @@ function DailyExercise() {
             <span className="step-text">Select any words you found difficult to understand.</span>
           </div>
           
-          <div className="text-container">
+          <div className={`text-container ${difficultyLevel}-text`}>
             {passageForWordSelection.split(/\s+/).map((word, idx) => {
               const cleanWord = word.replace(/[.,;:!?()"']/g, '');
               return (
@@ -534,20 +534,20 @@ function DailyExercise() {
           
           {comprehensionText && (
             <div className="passage-container">
-              <div className="passage-text">{comprehensionText}</div>
+              <div className={`passage-text ${difficultyLevel}-text`}>{comprehensionText}</div>
             </div>
           )}
           
           {comprehensionQuestions.length > 0 && (
             <div className="questions-container">
               <div className="question">
-                <h3>{currentQuestionIndex + 1}. {comprehensionQuestions[currentQuestionIndex].question}</h3>
+                <h3 className={`${difficultyLevel}-text`}>{currentQuestionIndex + 1}. {comprehensionQuestions[currentQuestionIndex].question}</h3>
                 
                 <div className="options">
                   {comprehensionQuestions[currentQuestionIndex].options.map((option, index) => (
                     <div 
                       key={index}
-                      className={`option ${selectedAnswers[currentQuestionIndex] === index ? 'selected' : ''}`}
+                      className={`option ${selectedAnswers[currentQuestionIndex] === index ? 'selected' : ''} ${difficultyLevel}-text`}
                       onClick={() => handleAnswerSelect(currentQuestionIndex, index)}
                     >
                       {option.displayId}. {option.text}
@@ -641,7 +641,7 @@ function DailyExercise() {
         </div>
 
         <div className="passage-container">
-          <div className="passage-text">{passageToShow}</div>
+          <div className={`passage-text ${difficultyLevel}-text`}>{passageToShow}</div>
         </div>
 
         <div className="actions">
