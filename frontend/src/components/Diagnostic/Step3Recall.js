@@ -4,6 +4,7 @@ import { useUser, useAuth } from '@clerk/clerk-react';
 import './Step3Recall.css';
 import filledShape from '../../filled-shape.svg';
 import useTextToSpeech from '../../hooks/useTextToSpeech';
+import { getApiUrl } from '../../config'; // Adjusted path
 
 function Step3Recall() {
   const [stage, setStage] = useState('intro'); //stages are intro, flashcards, test, completed
@@ -142,7 +143,7 @@ function Step3Recall() {
           const diagnosticData = JSON.parse(sessionStorage.getItem('diagnosticData') || '{}');
           const { readingTimeSeconds = 0, totalWords = 0 } = diagnosticData;
           
-          const response = await fetch('/api/user/diagnostic-complete', {
+          const response = await fetch(getApiUrl('/api/user/diagnostic-complete'), {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -184,7 +185,7 @@ function Step3Recall() {
               const roundedWordAccuracy = Math.round(wordAccuracy);
               const roundedComprehension = Math.round(comprehension);
               const roundedSpeedScore = Math.round(speedScore);
-              const response = await fetch('/api/user/diagnostic-results', {
+              const response = await fetch(getApiUrl('/api/user/diagnostic-results'), {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

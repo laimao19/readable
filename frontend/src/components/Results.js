@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@clerk/clerk-react';
 import './Results.css';
 import Navbar from './Navbar';
+import { getApiUrl } from '../config'; // Import the helper function
 
 function Results() {
   const navigate = useNavigate(); //navigation to other pages
@@ -44,7 +45,7 @@ function Results() {
       if (!token) {
         throw new Error("Authentication token not available");
       }
-      const statsResponse = await fetch('/api/user/stats', {
+      const statsResponse = await fetch(getApiUrl('/api/user/stats'), {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (!statsResponse.ok) {
@@ -52,7 +53,7 @@ function Results() {
       }
       const statsData = await statsResponse.json();
       setUserStats(statsData);
-      const exercisesResponse = await fetch('/api/user/exercises', {
+      const exercisesResponse = await fetch(getApiUrl('/api/user/exercises'), {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       
@@ -61,7 +62,7 @@ function Results() {
       }
       const exercisesData = await exercisesResponse.json();
       setPastExercises(exercisesData);
-      const diagnosticResponse = await fetch('/api/user/diagnostic-results', {
+      const diagnosticResponse = await fetch(getApiUrl('/api/user/diagnostic-results'), {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       

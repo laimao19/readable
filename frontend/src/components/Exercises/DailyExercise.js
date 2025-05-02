@@ -4,6 +4,7 @@ import { useAuth } from '@clerk/clerk-react';
 import './DailyExercise.css';
 import Navbar from '../Navbar';
 import useTextToSpeech from '../../hooks/useTextToSpeech';
+import { getApiUrl } from '../../config'; // Adjusted path
 
 function DailyExercise() {
   const [stage, setStage] = useState('intro'); //stages possible: intro, loading, reading, wordSelection, comprehension, error, completed
@@ -36,7 +37,7 @@ function DailyExercise() {
         if (!token) {
           throw new Error("Authentication token not available.");
         }
-        const response = await fetch('/api/user/diagnostic-results', {
+        const response = await fetch(getApiUrl('/api/user/diagnostic-results'), {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -65,7 +66,7 @@ function DailyExercise() {
       if (!token) {
         throw new Error("Authentication token not available.");
       }
-      const response = await fetch('/api/user/start-reading', {
+      const response = await fetch(getApiUrl('/api/user/start-reading'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +105,7 @@ function DailyExercise() {
       if (!token) {
         throw new Error("Authentication token not available.");
       }
-      const response = await fetch('/api/user/finish-reading', {
+      const response = await fetch(getApiUrl('/api/user/finish-reading'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -145,7 +146,7 @@ function DailyExercise() {
       params.append('min_words', '10'); 
       const queryString = params.toString() ? `?${params.toString()}` : ''; //query string
       //fetching from the backend the passage
-      const response = await fetch(`/api/exercises/daily${queryString}`, {
+      const response = await fetch(getApiUrl(`/api/exercises/daily${queryString}`), {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -187,7 +188,7 @@ function DailyExercise() {
         throw new Error("Authentication token not available.");
       }
       //fetching from the backend the comprehension exercise
-      const response = await fetch('/api/exercises/daily-comprehension', {
+      const response = await fetch(getApiUrl('/api/exercises/daily-comprehension'), {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -283,7 +284,7 @@ function DailyExercise() {
         readingTimeSeconds: readingTimeSeconds,
         exerciseType: 'daily'
       };
-      const response = await fetch('/api/user/exercise-complete', {
+      const response = await fetch(getApiUrl('/api/user/exercise-complete'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

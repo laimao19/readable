@@ -4,6 +4,7 @@ import './DiagnosticExercise.css';
 import Navbar from '../Navbar';
 import { useAuth } from '@clerk/clerk-react';
 import useTextToSpeech from '../../hooks/useTextToSpeech';
+import { getApiUrl } from '../../config';
 
 const sampleText = "Speaking at the same meeting, Derrick Taff, a social scientist at Pennsylvania State University, described preliminary experiments which suggest that listening to recordings from national parks, of waterfalls, birdsong and wind, helped people recover from stressful events.";
 
@@ -24,7 +25,7 @@ function DiagnosticExercise() {
         throw new Error("Authentication token not available.");
       }
       //start reading session
-      const response = await fetch('/api/user/start-reading', {
+      const response = await fetch(getApiUrl('/api/user/start-reading'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +65,7 @@ function DiagnosticExercise() {
         throw new Error("Authentication token not available.");
       }
       //finish reading session
-      const response = await fetch('/api/user/finish-reading', {
+      const response = await fetch(getApiUrl('/api/user/finish-reading'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

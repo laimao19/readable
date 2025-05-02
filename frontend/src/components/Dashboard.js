@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import { useUser, useAuth } from '@clerk/clerk-react';
 import Navbar from './Navbar';
+import { getApiUrl } from '../config'; // Import the helper function
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ function Dashboard() {
       setLoading(true);
       const token = await getToken();
       if (!token) return;
-      const response = await fetch('/api/user/stats', {
+      const response = await fetch(getApiUrl('/api/user/stats'), {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (!response.ok) {
