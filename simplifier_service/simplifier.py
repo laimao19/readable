@@ -64,9 +64,10 @@ class NLPSimplifier:
             'dge', 'ck', 'rr', 'll', 'mm', 'nn', 'tt', 'pp', 'cc', 'ee', 'oo'
         ]
 
-        #initializing the fill-mask transformer model, roberta-base
-        self.fill_mask = pipeline("fill-mask", model="roberta-base")
-        self.tokenizer = AutoTokenizer.from_pretrained("roberta-base") 
+        #initializing the fill-mask transformer model - use distilled version for lower memory
+        model_name = "distilroberta-base"
+        self.fill_mask = pipeline("fill-mask", model=model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name) 
         self.mask_token = self.tokenizer.mask_token
         self.has_transformer = True
 
