@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import { useUser, useAuth } from '@clerk/clerk-react';
@@ -6,10 +6,9 @@ import Navbar from './Navbar';
 
 function Dashboard() {
   const navigate = useNavigate();
-  const { isLoaded, isSignedIn } = useUser();
+  const { isSignedIn } = useUser();
   const { getToken } = useAuth();
   const [userStats, setUserStats] = useState(null);
-  const [derivedStats, setDerivedStats] = useState(null);
   const [loading, setLoading] = useState(true);
   
   //formatting reading time as hours and minutes
@@ -22,8 +21,7 @@ function Dashboard() {
     return `${mins}m`;
   };
 
-  //function to fetch user stats from the backend
-  const fetchUserStats = async () => {
+  const fetchUserStats = useCallback(async () => {
     try {
       setLoading(true);
       const token = await getToken();
@@ -37,26 +35,25 @@ function Dashboard() {
 
       const statsData = await response.json(); //stats data
       setUserStats(statsData);
-      //calculating derived stats based on fetched data
-      const derived = {
-        accuracy: statsData.totalComprehensionQuestions > 0 
-          ? ((statsData.totalCorrectComprehensionAnswers / statsData.totalComprehensionQuestions) * 100).toFixed(1) 
-          : 0,
-      };
-      setDerivedStats(derived);
+      // Calculate derived stats directly if needed elsewhere, or remove if not used
+      // const derived = {
+      //   accuracy: statsData.totalComprehensionQuestions > 0 
+      //     ? ((statsData.totalCorrectComprehensionAnswers / statsData.totalComprehensionQuestions) * 100).toFixed(1) 
+      //     : 0,
+      // };
+      // setDerivedStats(derived); 
     } catch (error) {
       console.error('Error fetching user stats:', error);
     } finally {
       setLoading(false);
     }
-  };
+  }, [getToken]); // Add getToken as a dependency for useCallback
 
   useEffect(() => {
-    //fetching user stats from backend API when component mounts or user changes
     if (isSignedIn) {
       fetchUserStats();
     }
-  }, [isSignedIn, getToken]); //rerun effect if isSignedIn or getToken changes
+  }, [isSignedIn, fetchUserStats]); // Add fetchUserStats to dependencies
 
   return (
     <div className="dashboard-container">

@@ -36,7 +36,7 @@ function Step3Recall() {
   //function to calculate difficulty level based on all tests
   const calculateDifficultyLevel = () => {
     const diagnosticData = JSON.parse(sessionStorage.getItem('diagnosticData') || '{}');
-    const { difficultWords = [], totalWords = 0, comprehensionAnswers = {}, readingTimeSeconds = 0, wordsPerMinute = 0 } = diagnosticData;
+    const { difficultWords = [], totalWords = 0, comprehensionAnswers = {} } = diagnosticData;
     let difficultyScores = [];
     //calculating difficulty from word test (percentage of difficult words)
     const difficultWordPercent = totalWords > 0 

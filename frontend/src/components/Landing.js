@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
 function Landing() {
   const navigate = useNavigate();
-  const { isSignedIn, user } = useUser();
+  const { user } = useUser();
 
   return (
     <div className="landing-wrapper">

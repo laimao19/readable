@@ -11,7 +11,6 @@ function DailyExercise() {
   const [simplifiedPassage, setSimplifiedPassage] = useState(''); //geting simplified passage
   const [dataSimplifiedPassage, setDataSimplifiedPassage] = useState(''); //getting data simplified passage
   const [error, setError] = useState(null); //error state
-  const [sourceInfo, setSourceInfo] = useState({}); //source info state
   const [wordCount, setWordCount] = useState(0); //word count state
   const [selectedWords, setSelectedWords] = useState([]); //selected words state
   const [wordSelectionDone, setWordSelectionDone] = useState(false); //word selection done state
@@ -22,10 +21,8 @@ function DailyExercise() {
   const [comprehensionScore, setComprehensionScore] = useState(0); // comprehension score
   const [showComprehension, setShowComprehension] = useState(false); // whether to show comprehension questions
   const [readingStartTime, setReadingStartTime] = useState(null); // track when reading starts
-  const [readingEndTime, setReadingEndTime] = useState(null); // track when reading ends
   const [readingTimeSeconds, setReadingTimeSeconds] = useState(0); // reading time in seconds
   const [wordsPerMinute, setWordsPerMinute] = useState(0); // words per minute
-  const [sessionId, setSessionId] = useState(null); // reading session ID
   const [difficultyLevel, setDifficultyLevel] = useState('intermediate'); // default to intermediate
   const { speak, cancel, isSpeaking, isSupported } = useTextToSpeech();
   const navigate = useNavigate(); //navigation hook
@@ -97,7 +94,6 @@ function DailyExercise() {
     if (!readingStartTime) return; //if no reading start time, return
     const endTime = Date.now(); //end time is now
     const timeSpentReading = Math.max(1, (endTime - readingStartTime) / 1000); //calculate time spent
-    setReadingEndTime(endTime); //set end time
     setReadingTimeSeconds(timeSpentReading); //set reading time seconds
     //calculating WPM
     if (wordCount > 0) {

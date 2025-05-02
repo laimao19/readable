@@ -82,7 +82,7 @@ function DiagnosticExercise() {
           wordsPerMinute: wpm
         };
       }      
-      const data = await response.json();
+      await response.json(); 
       return {
         readingTimeSeconds: timeSpent,
         wordsPerMinute: wpm

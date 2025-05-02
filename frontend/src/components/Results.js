@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@clerk/clerk-react';
 import './Results.css';
@@ -35,8 +35,8 @@ function Results() {
     return `${mins}m`;
   };
 
-  //function to fetch user stats and history from the backend
-  const fetchUserData = async () => {
+
+  const fetchUserData = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -66,26 +66,33 @@ function Results() {
       });
       
       if (!diagnosticResponse.ok) {
-        throw new Error(`Failed to fetch diagnostic results: ${diagnosticResponse.status}`);
+        if (diagnosticResponse.status !== 404) { 
+            throw new Error(`Failed to fetch diagnostic results: ${diagnosticResponse.status}`);
+        }
+        setDiagnosticResults(null); 
+      } else {
+          const diagnosticData = await diagnosticResponse.json();
+          if (diagnosticData) {
+            setDiagnosticResults({
+              ...diagnosticData,
+              recommendedExercises: [
+                'Daily reading practice',
+                'Vocabulary building',
+                'Comprehension questions'
+              ]
+            });
+          } else {
+              setDiagnosticResults(null);
+          }
       }
-      const diagnosticData = await diagnosticResponse.json();
-      if (diagnosticData) {
-        setDiagnosticResults({
-          ...diagnosticData,
-          recommendedExercises: [
-            'Daily reading practice',
-            'Vocabulary building',
-            'Comprehension questions'
-          ]
-        });
-      } else if (statsData && statsData.readingLevel) {
-        //fallback for basic diagnostic data from user stats
+      
+      if (!diagnosticResults && statsData && statsData.readingLevel) {
         setDiagnosticResults({
           completedAt: statsData.updatedAt || new Date(),
           readingLevel: statsData.readingLevel,
-          accuracyScore: 75, 
-          comprehensionScore: 70,
-          speedScore: 65,
+          accuracyScore: null, 
+          comprehensionScore: null,
+          speedScore: null,
           recommendedExercises: [
             'Daily reading practice',
             'Vocabulary building',
@@ -99,10 +106,11 @@ function Results() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [getToken, diagnosticResults]); 
+  
   useEffect(() => {
     fetchUserData();
-  }, [getToken]);
+  }, [fetchUserData]); 
 
   return (
     <div className="results-container">
