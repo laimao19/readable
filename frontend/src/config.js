@@ -1,4 +1,5 @@
 export const API_URL = process.env.REACT_APP_BACKEND_URL || '';
+console.log('API_URL =', API_URL);
 export const SIMPLIFIER_URL = process.env.REACT_APP_SIMPLIFIER_SERVICE_URL || '';
 
 export const getApiUrl = (endpoint) => {
