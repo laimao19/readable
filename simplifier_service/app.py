@@ -3,6 +3,9 @@ import os
 import logging
 from flask_cors import CORS 
 from simplifier import NLPSimplifier
+import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
 
 app = Flask(__name__)
 allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:3000')
