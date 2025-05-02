@@ -81,8 +81,7 @@ function DailyExercise() {
         console.error('Error starting reading timer:', response.statusText);
         return;
       }
-      const data = await response.json();
-      setSessionId(data.sessionId);
+      await response.json();
       setReadingStartTime(Date.now());
     } catch (error) {
       console.error('Error starting reading timer:', error);
@@ -169,13 +168,6 @@ function DailyExercise() {
       if (data.data_simplified_text) {
         setDataSimplifiedPassage(data.data_simplified_text);
       }
-      //source information
-      setSourceInfo({
-        source: data.source || 'unknown',
-        originalDifficulty: data.original_difficulty || 'unknown',
-        simplifiedDifficulty: data.simplified_difficulty || 'unknown',
-        simplificationType: data.simplification_type || 'unknown'
-      });
       setStage('reading'); //set stage to reading on successful fetch
       setShowComprehension(true); //set showComprehension to true after successful fetch
       //start the reading timer when content is loaded
