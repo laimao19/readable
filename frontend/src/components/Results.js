@@ -62,6 +62,7 @@ function Results() {
       }
       const exercisesData = await exercisesResponse.json();
       setPastExercises(exercisesData);
+      let fetchedDiagnosticResults = null;
       const diagnosticResponse = await fetch(getApiUrl('/api/user/diagnostic-results'), {
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -70,28 +71,25 @@ function Results() {
         if (diagnosticResponse.status !== 404) { 
             throw new Error(`Failed to fetch diagnostic results: ${diagnosticResponse.status}`);
         }
-        setDiagnosticResults(null); 
       } else {
           const diagnosticData = await diagnosticResponse.json();
           if (diagnosticData) {
-            setDiagnosticResults({
+            fetchedDiagnosticResults = {
               ...diagnosticData,
               recommendedExercises: [
                 'Daily reading practice',
                 'Vocabulary building',
                 'Comprehension questions'
               ]
-            });
-          } else {
-              setDiagnosticResults(null);
+            };
           }
       }
       
-      if (!diagnosticResults && statsData && statsData.readingLevel) {
-        setDiagnosticResults({
+      if (!fetchedDiagnosticResults && statsData && statsData.readingLevel) {
+        fetchedDiagnosticResults = {
           completedAt: statsData.updatedAt || new Date(),
           readingLevel: statsData.readingLevel,
-          accuracyScore: null, 
+          accuracyScore: null,
           comprehensionScore: null,
           speedScore: null,
           recommendedExercises: [
@@ -99,15 +97,16 @@ function Results() {
             'Vocabulary building',
             'Comprehension questions'
           ]
-        });
+        };
       }
+      setDiagnosticResults(fetchedDiagnosticResults);
     } catch (err) {
       console.error('Error fetching results data:', err);
       setError(err.message);
     } finally {
       setLoading(false);
     }
-  }, [getToken, diagnosticResults]); 
+  }, [getToken]); 
   
   useEffect(() => {
     fetchUserData();
