@@ -5,6 +5,7 @@ from flask_cors import CORS
 from simplifier import NLPSimplifier
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 
 app = Flask(__name__)
