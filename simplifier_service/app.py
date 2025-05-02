@@ -5,7 +5,10 @@ from flask_cors import CORS
 from simplifier import NLPSimplifier
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:3000')
+origins = [origin.strip() for origin in allowed_origins.split(',')]
+CORS(app, resources={r"/*": {"origins": origins}})
+
 logging.basicConfig(level=logging.INFO)
 
 #initializing simplifier

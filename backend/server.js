@@ -8,7 +8,18 @@ const simplifyRoutes = require('./routes/simplify');
 const prisma = new PrismaClient();
 const app = express();
 const port = process.env.PORT || 3001; 
-app.use(cors({ origin: 'http://localhost:3000' })); //allowing frontend to access backend
+const allowedOrigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:3000'];
+app.use(cors({ 
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = `The CORS policy for this site does not allow access from the specified Origin: ${origin}`;
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  }
+}));
+
 app.use(express.json());
 
 //mounting the user stats routes under /api/user
@@ -17,6 +28,8 @@ app.use('/api/user', userStatsRoutes);
 //mounting the simplify routes under /api/simplify 
 app.use('/api/simplify', simplifyRoutes);
 
+// Get simplifier service URL from environment or default to localhost
+const SIMPLIFIER_SERVICE_URL = process.env.SIMPLIFIER_SERVICE_URL || 'http://localhost:5000';
 
 //route to get a daily exercise passage
 app.get('/api/exercises/daily', ClerkExpressRequireAuth(), async (req, res) => {
@@ -25,7 +38,6 @@ app.get('/api/exercises/daily', ClerkExpressRequireAuth(), async (req, res) => {
   const fs = require('fs').promises; //use promises version of fs for file reading because its async
   const path = require('path'); //use path to join file path
   const axios = require('axios'); //use axios to make requests to the simplifier service
-  const SIMPLIFIER_SERVICE_URL = 'http://localhost:5000'; //ensure this is accessible
   try {
     //get user's reading level from DB
     const userStats = await prisma.userStats.findUnique({
