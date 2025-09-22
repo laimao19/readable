@@ -121,3 +121,28 @@ html, body, #root {
   line-height: 1.6;
   opacity: 0.9;
 }
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;  
+  margin-top: 1.5rem;
+}
+
+
+.demo-button {
+  background: transparent;
+  border: 2px solid #3bb9b6;
+  color: #3bb9b6;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.demo-button:hover {
+  background: #3bb9b6;
+  color: #fff;
+}

@@ -42,22 +42,33 @@ function Landing() {
             practice. After a quick diagnostic, you'll get custom reading passages tailored to
             your needs — with supportive tools to track progress and build confidence.
           </p>
-          <SignedOut>
-            <button className="diagnostic-button" onClick={() => navigate('/sign-up')}>
-              Create Free Account
-            </button>
-          </SignedOut>
-          <SignedIn>
-            {user?.unsafeMetadata?.diagnosticCompleted ? (
-              <button className="diagnostic-button" onClick={() => navigate('/dashboard')}>
-                Go to Dashboard
+         <div className="cta-row">
+            <a
+              href="https://www.youtube.com/watch?v=yCGnHU4dD4M&feature=youtu.be"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="demo-button">Watch the Demo</button>
+            </a>
+
+            <SignedOut>
+              <button className="start-exercise-button" onClick={() => navigate('/sign-up')}>
+                Create a Free Account
               </button>
-            ) : (
-              <button className="diagnostic-button" onClick={() => navigate('/diagnostic')}>
-                Begin Diagnostic
-              </button>
-            )}
-          </SignedIn>
+            </SignedOut>
+
+            <SignedIn>
+              {user?.unsafeMetadata?.diagnosticCompleted ? (
+                <button className="dashboard-button" onClick={() => navigate('/dashboard')}>
+                  Go to Dashboard
+                </button>
+              ) : (
+                <button className="dashboard-button" onClick={() => navigate('/diagnostic')}>
+                  Begin Diagnostic
+                </button>
+              )}
+            </SignedIn>
+          </div>
         </div>
       </div>
     </div>
